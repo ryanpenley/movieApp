@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 :root {
   --primary-color: #22254b;
@@ -17,10 +16,10 @@ body {
 }
 
 header {
-  background-color: var(--secondary-color);
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
+  background-color: var(--secondary-color);
 }
 
 .search {
@@ -30,7 +29,7 @@ header {
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  color: white;
+  color: #fff;
 }
 
 .search::placeholder {
@@ -45,6 +44,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
@@ -66,8 +66,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap:0.2rem;
   padding: 0.5rem 1rem 1rem;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .movie-info h3 {
@@ -76,7 +77,7 @@ main {
 
 .movie-info span {
   background-color: var(--primary-color);
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 3px;
   font-weight: bold;
 }
@@ -85,19 +86,16 @@ main {
   color: lightgreen;
 }
 
-
 .movie-info span.orange {
   color: orange;
 }
-
 
 .movie-info span.red {
   color: red;
 }
 
-
 .overview {
-  background-color: white;
+  background-color: #fff;
   padding: 2rem;
   position: absolute;
   left: 0;
@@ -105,6 +103,7 @@ main {
   right: 0;
   max-height: 100%;
   transform: translateY(101%);
+  overflow-y: auto;
   transition: transform 0.3s ease-in;
 }
 
